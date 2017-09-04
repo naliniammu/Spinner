@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+ <html>
+        <head>
+            <title>Spinner Example</title>
+            <style type="text/css">
+                .spinner{
+                      width: 50px;
+                      height: 50px;
+                      border: 2px solid red;
+                      border-radius: 40px;
+                      border-top-color: black;
+                      animation: spin 2s ease-in infinite;
+                      position: fixed;
+                      top: 0;
+                      bottom: 0;
+                      right: 0;
+                      left: 0;
+                      margin: auto
+                    }
+                @keyframes spin{
+                    0%{
+                        transform:  rotate(0deg);
+                    }
+                    100%{
+                        transform: rotate(360deg);
+                    }
+                }
+            </style>
+     </head>
+     <body>
+        <div class="spinner"></div>
+     </body>
+</html>
